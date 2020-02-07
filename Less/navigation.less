@@ -1,0 +1,53 @@
+header {
+    background-color: teal; 
+    .flex-reverse(); 
+    align-items:center; 
+    animation-name: colors;
+    animation-duration: 10s ; 
+    animation-iteration-count: infinite;
+
+    @keyframes colors{
+        0% {background-color: teal;}
+        20% {background-color: cyan;}
+        40% {background-color: deepskyblue ;}
+        60% {background-color: turquoise ;}
+        80% {background-color: aqua;}
+        100% {background-color: paleturquoise;}
+    }
+
+    div{
+        width: 50%; 
+    }
+
+    nav{
+        display: flex; 
+        justify-content:space-around; 
+
+        a{
+            font-size: 2rem; 
+            text-decoration: none; 
+            color: black; 
+        }
+
+        a:hover{
+            color:beige;
+        }//closes hover
+    }//closes nav
+
+    .MC-logo{
+        display:flex;
+        align-items:center;
+
+        p{
+            font-size: 2rem;
+            color:white;
+        }
+    }
+}// closes header
+
+footer{
+    text-align:center;
+    padding:1%;
+    background: teal;
+    color:white;
+}

@@ -1,0 +1,100 @@
+.container{
+
+    .top-page{
+        display:flex; 
+        
+        @media @mobile{
+            flex-direction: column;
+        }
+
+        div{
+            width: 100%;
+            
+            
+            #Relief-bg{
+                .txtalign-margin(); 
+                color:white;
+                font-size: 2.2rem;
+                padding:5%;
+                background-color:#01B5CD ;
+                width:60%;
+                border-radius:12px;
+
+                .color-changing-animation(Relief);
+
+                @media @tablet{
+                    width:50%;
+                }
+            }
+
+            p{
+                text-align:center;
+                font-size: 2rem;
+                @media @tablet{
+                    font-size: 1.6rem;
+                }
+            }
+        }//closes div
+
+        .sign-up{
+
+            text-align:center;
+
+            p{
+                .txtalign-margin();
+                background-color: #01B5CD ; 
+                width: 20%;
+                border-radius: 12px;
+                padding:2%; 
+
+                .color-changing-animation(signUpBtn);
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }//closes a in p
+
+                @media @tablet{
+                    width:100%;
+                }
+            }//closes p 
+
+            p:hover{
+                background: teal; 
+            }// closes p:hover
+            
+        }//closes .sign-up
+
+    //Below is transition of opacity text in logos
+        .logos{
+            .flex-column(); 
+            align-items:center;
+            margin: 2% 0; 
+
+            .hidden-txt{
+                opacity: 0; 
+                transition: all ease 0.8s; 
+                @media @tablet{
+                    opacity: 1;
+                }//closes tablet media
+            }// closes text below images
+
+        }//closes logo
+
+        .logos:hover{
+            p{
+                background-image: url("https://cdn.aarp.net/content/dam/aarp/health/drugs_supplements/2019/08/1140-med-marijuana-caduceus.imgcache.rev873985b7234d2a2df9a09f5cefacea57.jpg");
+                font-size: 2rem;
+            }
+            .hidden-txt{
+                opacity: 1; 
+            }//closes hidden.txt
+        }//closes hover on logo
+
+
+
+    }//closes top page
+
+}//closes container
+
+

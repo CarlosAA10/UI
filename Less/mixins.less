@@ -1,0 +1,30 @@
+// mixins
+.flex-reverse(){
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+.flex-column(){
+    display:flex; 
+    flex-direction:column; 
+}
+
+.txtalign-margin(){
+    text-align:center;
+    margin: 4% auto; 
+}
+
+.color-changing-animation(@name){
+    animation-name: @name;
+    animation-duration: 10s ; 
+    animation-iteration-count: infinite;
+
+    @keyframes @name{
+        0% {background-color: teal;}
+        20% {background-color: cyan;}
+        40% {background-color: deepskyblue ;}
+        60% {background-color: turquoise ;}
+        80% {background-color: aqua;}
+        100% {background-color: paleturquoise;}
+    }
+}
